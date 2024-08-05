@@ -1,29 +1,28 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1722895998
-icon.svg::CompressedTexture2D::985811133504262780::1722587717::1722587723::1::::<><>::
-whitePlayer.gd::GDScript::-1::1722691302::0::1::::<>RigidBody2D<>::
-::res://assets/::1722856694
-backgroundg-grey.png::CompressedTexture2D::4424555279594305599::1722687762::1722687762::1::::<><>::
-black bar.png::CompressedTexture2D::5424187323162455462::1722687762::1722687762::1::::<><>::
-Black_player jump 48x48-Sheet.png::CompressedTexture2D::6432677106568656563::1722856694::1722856694::1::::<><>::
-Black_player run 48x48-Sheet.png::CompressedTexture2D::2214000108173003280::1722856694::1722856694::1::::<><>::
-Black_roll white-Sheet.png::CompressedTexture2D::2322900135690216644::1722856694::1722856694::1::::<><>::
-idle black-Sheet.png::CompressedTexture2D::3684109899700006858::1722687762::1722687762::1::::<><>::
-idle white-Sheet.png::CompressedTexture2D::1858643808825302304::1722687762::1722687762::1::::<><>::
-player jump 48x48-Sheet.png::CompressedTexture2D::6140830667700618224::1722810709::1722810712::1::::<><>::
-player run 48x48-Sheet.png::CompressedTexture2D::5978966994861082354::1722809508::1722809508::1::::<><>::
-roll white-Sheet.png::CompressedTexture2D::2295337168888377395::1722809523::1722809523::1::::<><>::
-white bar.png::CompressedTexture2D::2706801154752908129::1722687762::1722687762::1::::<><>::
-::res://assets/platform/::1722853668
-B&W tile set.png::CompressedTexture2D::7115278502642310210::1722853668::1722853668::1::::<><>::
-B&W tile set_Reversed.png::CompressedTexture2D::7838166455337414858::1722853668::1722853668::1::::<><>::
-door.png::CompressedTexture2D::2649027694007676879::1722853668::1722853668::1::::<><>::
-extras  tileset.png::CompressedTexture2D::1130292844837528976::1722853668::1722853668::1::::<><>::
-extras  tileset_Reversed.png::CompressedTexture2D::7261872221931122668::1722853668::1722853668::1::::<><>::
-tree.png::CompressedTexture2D::504536065681143558::1722853668::1722853668::1::::<><>::
-::res://MjGameJam/::1722895714
-::res://scenes/::1722895094
-game.tscn::PackedScene::4061272678672134834::1722895094::0::1::::<><>::uid://kfh6p5ifne2d::::res://scenes/whitePlayer.tscn<>uid://c8mxukts3oehu::::res://assets/platform/B&W tile set.png<>uid://djw4prslsk51o::::res://assets/platform/B&W tile set_Reversed.png
-whitePlayer.tscn::PackedScene::712691538276105953::1722894852::0::1::::<><>::uid://1qluelgktcvw::::res://assets/idle white-Sheet.png<>res://script/whitePlayer.gd<>uid://8dh3cxnt011q::::res://assets/Black_roll white-Sheet.png<>uid://bsqu0tcp4wc8a::::res://assets/idle black-Sheet.png<>uid://7x44rg0juqt4::::res://assets/roll white-Sheet.png<>uid://cxwbitpkdh2kl::::res://assets/Black_player jump 48x48-Sheet.png<>uid://crgiyicskm86q::::res://assets/player run 48x48-Sheet.png<>uid://ctqwt4aaso1su::::res://assets/player jump 48x48-Sheet.png<>uid://6sqi1ux233bo::::res://assets/Black_player run 48x48-Sheet.png
-::res://script/::1722895840
-whitePlayer.gd::GDScript::-1::1722895840::0::1::::<>CharacterBody2D<>::
+::res://::1722896583
+icon.svg::CompressedTexture2D::985811133504262780::1722896459::1722896459::1::::<><>::
+whitePlayer.gd::GDScript::-1::1722896459::0::1::::<>RigidBody2D<>::
+::res://assets/::1722896459
+backgroundg-grey.png::CompressedTexture2D::4424555279594305599::1722896459::1722896459::1::::<><>::
+black bar.png::CompressedTexture2D::5424187323162455462::1722896459::1722896459::1::::<><>::
+Black_player jump 48x48-Sheet.png::CompressedTexture2D::6432677106568656563::1722896459::1722896459::1::::<><>::
+Black_player run 48x48-Sheet.png::CompressedTexture2D::2214000108173003280::1722896459::1722896459::1::::<><>::
+Black_roll white-Sheet.png::CompressedTexture2D::2322900135690216644::1722896459::1722896459::1::::<><>::
+idle black-Sheet.png::CompressedTexture2D::3684109899700006858::1722896459::1722896459::1::::<><>::
+idle white-Sheet.png::CompressedTexture2D::1858643808825302304::1722896459::1722896459::1::::<><>::
+player jump 48x48-Sheet.png::CompressedTexture2D::6140830667700618224::1722896459::1722896459::1::::<><>::
+player run 48x48-Sheet.png::CompressedTexture2D::5978966994861082354::1722896459::1722896459::1::::<><>::
+roll white-Sheet.png::CompressedTexture2D::2295337168888377395::1722896459::1722896459::1::::<><>::
+white bar.png::CompressedTexture2D::2706801154752908129::1722896459::1722896459::1::::<><>::
+::res://assets/platform/::1722896459
+B&W tile set.png::CompressedTexture2D::7115278502642310210::1722896459::1722896459::1::::<><>::
+B&W tile set_Reversed.png::CompressedTexture2D::7838166455337414858::1722896459::1722896459::1::::<><>::
+door.png::CompressedTexture2D::2649027694007676879::1722896459::1722896459::1::::<><>::
+extras  tileset.png::CompressedTexture2D::1130292844837528976::1722896459::1722896459::1::::<><>::
+extras  tileset_Reversed.png::CompressedTexture2D::7261872221931122668::1722896459::1722896459::1::::<><>::
+tree.png::CompressedTexture2D::504536065681143558::1722896459::1722896459::1::::<><>::
+::res://scenes/::1722896459
+game.tscn::PackedScene::4061272678672134834::1722896459::0::1::::<><>::uid://kfh6p5ifne2d::::res://scenes/whitePlayer.tscn<>uid://c8mxukts3oehu::::res://assets/platform/B&W tile set.png<>uid://djw4prslsk51o::::res://assets/platform/B&W tile set_Reversed.png
+whitePlayer.tscn::PackedScene::712691538276105953::1722896459::0::1::::<><>::uid://1qluelgktcvw::::res://assets/idle white-Sheet.png<>res://script/whitePlayer.gd<>uid://8dh3cxnt011q::::res://assets/Black_roll white-Sheet.png<>uid://bsqu0tcp4wc8a::::res://assets/idle black-Sheet.png<>uid://7x44rg0juqt4::::res://assets/roll white-Sheet.png<>uid://cxwbitpkdh2kl::::res://assets/Black_player jump 48x48-Sheet.png<>uid://crgiyicskm86q::::res://assets/player run 48x48-Sheet.png<>uid://ctqwt4aaso1su::::res://assets/player jump 48x48-Sheet.png<>uid://6sqi1ux233bo::::res://assets/Black_player run 48x48-Sheet.png
+::res://script/::1722896459
+whitePlayer.gd::GDScript::-1::1722896459::0::1::::<>CharacterBody2D<>::
