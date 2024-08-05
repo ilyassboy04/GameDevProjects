@@ -1,2 +1,2 @@
 res://scenes/game.tscn
-res://script/whitePlayer.gd
+res://scenes/whitePlayer.tscn
