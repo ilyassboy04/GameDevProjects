@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1722895043
+::res://::1722895998
 icon.svg::CompressedTexture2D::985811133504262780::1722587717::1722587723::1::::<><>::
 whitePlayer.gd::GDScript::-1::1722691302::0::1::::<>RigidBody2D<>::
 ::res://assets/::1722856694
@@ -21,8 +21,9 @@ door.png::CompressedTexture2D::2649027694007676879::1722853668::1722853668::1:::
 extras  tileset.png::CompressedTexture2D::1130292844837528976::1722853668::1722853668::1::::<><>::
 extras  tileset_Reversed.png::CompressedTexture2D::7261872221931122668::1722853668::1722853668::1::::<><>::
 tree.png::CompressedTexture2D::504536065681143558::1722853668::1722853668::1::::<><>::
-::res://scenes/::1722894852
-game.tscn::PackedScene::4061272678672134834::1722868810::0::1::::<><>::uid://kfh6p5ifne2d::::res://scenes/whitePlayer.tscn<>uid://c8mxukts3oehu::::res://assets/platform/B&W tile set.png<>uid://djw4prslsk51o::::res://assets/platform/B&W tile set_Reversed.png
+::res://MjGameJam/::1722895714
+::res://scenes/::1722895094
+game.tscn::PackedScene::4061272678672134834::1722895094::0::1::::<><>::uid://kfh6p5ifne2d::::res://scenes/whitePlayer.tscn<>uid://c8mxukts3oehu::::res://assets/platform/B&W tile set.png<>uid://djw4prslsk51o::::res://assets/platform/B&W tile set_Reversed.png
 whitePlayer.tscn::PackedScene::712691538276105953::1722894852::0::1::::<><>::uid://1qluelgktcvw::::res://assets/idle white-Sheet.png<>res://script/whitePlayer.gd<>uid://8dh3cxnt011q::::res://assets/Black_roll white-Sheet.png<>uid://bsqu0tcp4wc8a::::res://assets/idle black-Sheet.png<>uid://7x44rg0juqt4::::res://assets/roll white-Sheet.png<>uid://cxwbitpkdh2kl::::res://assets/Black_player jump 48x48-Sheet.png<>uid://crgiyicskm86q::::res://assets/player run 48x48-Sheet.png<>uid://ctqwt4aaso1su::::res://assets/player jump 48x48-Sheet.png<>uid://6sqi1ux233bo::::res://assets/Black_player run 48x48-Sheet.png
-::res://script/::1722868624
-whitePlayer.gd::GDScript::-1::1722868624::0::1::::<>CharacterBody2D<>::
+::res://script/::1722895840
+whitePlayer.gd::GDScript::-1::1722895840::0::1::::<>CharacterBody2D<>::
