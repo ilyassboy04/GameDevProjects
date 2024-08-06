@@ -591,7 +591,7 @@ script = ExtResource("1_saem4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_eysbo")
-animation = &"Black_Run"
+animation = &"White_Double_Jump"
 autoplay = "White_Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

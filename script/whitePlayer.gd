@@ -9,7 +9,7 @@ var jump_counter = 0
 #Bllack v White
 var state = false
 
-const DASH_SPEED = 900.0
+const DASH_SPEED = 700.0
 var dashing = false
 var dash_cooldown_value = true
 
@@ -92,7 +92,7 @@ func jump():
 		jump_counter = 0
 		
 func white_animation(direction):
-	if is_on_floor:
+	if is_on_floor():
 		if direction == 0:
 			animated_sprite_2d.play("White_Idle")
 		else:
@@ -127,11 +127,10 @@ func state_checker():
 		print("true")
 
 func animation(direction):
-	if not dashing:
-		if state == false:
-			white_animation(direction)
-		elif state == true:
-			black_animation(direction)
+	if not dashing and state == false:
+		white_animation(direction)
+	elif not dashing and state == true:
+		black_animation(direction)
 	elif dashing:
 		if state == true:
 			animated_sprite_2d.play("Black_Dash")
