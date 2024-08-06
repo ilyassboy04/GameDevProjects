@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://bx4ktkhiksjxq"]
+[gd_scene load_steps=9 format=3 uid="uid://bx4ktkhiksjxq"]
 
 [ext_resource type="PackedScene" uid="uid://kfh6p5ifne2d" path="res://scenes/whitePlayer.tscn" id="1_30726"]
 [ext_resource type="Texture2D" uid="uid://c8mxukts3oehu" path="res://assets/platform/B&W tile set.png" id="2_1xlwu"]
 [ext_resource type="Texture2D" uid="uid://djw4prslsk51o" path="res://assets/platform/B&W tile set_Reversed.png" id="3_xeh45"]
+[ext_resource type="PackedScene" uid="uid://dncf7bufxgxl0" path="res://scenes/killzone.tscn" id="4_tqj8h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rlp72"]
 texture = ExtResource("2_1xlwu")
@@ -1474,6 +1475,8 @@ physics_layer_1/collision_mask = 2
 sources/2 = SubResource("TileSetAtlasSource_rlp72")
 sources/3 = SubResource("TileSetAtlasSource_ra6cv")
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_hwf8w"]
+
 [node name="game" type="Node2D"]
 
 [node name="whitePlayer" parent="." instance=ExtResource("1_30726")]
@@ -1491,3 +1494,10 @@ layer_0/name = "main"
 layer_0/tile_data = PackedInt32Array(262137, 2, 0, 262139, 131074, 0, 262141, 131074, 0, 262143, 131074, 0, 196609, 131074, 0, 196611, 131074, 0, 196613, 131074, 0, 196615, 131074, 0, 65545, 2, 2, -65527, 2, 2, -196599, 2, 2, -327671, 2, 2, 196617, 131074, 2, 393209, 2, 4, 393211, 131074, 4, 393213, 131074, 4, 393215, 131074, 4, 327681, 131074, 4, 327683, 131074, 4, 327685, 131074, 4, 327687, 131074, 4, 327689, 131074, 4, 327691, 262146, 4, 196619, 262146, 2, 65547, 262146, 2, -65525, 262146, 2, -196597, 262146, 2, -327669, 262146, 2, -458743, 2, 0, -458741, 262146, 0, -589808, 2, 6, -589806, 131074, 6, -589804, 262146, 6, -589799, 393218, 6, -393213, 393218, 0, -262141, 393218, 2, -131069, 393218, 4, -983018, 393219, 0, -917482, 393219, 1, -851946, 393219, 1, -786410, 393219, 1, -720874, 393219, 5, -983017, 458755, 0, -917481, 458755, 4, -851945, 458755, 4, -786409, 458755, 4, -720873, 458755, 5)
 layer_1/name = "non_main"
 layer_1/tile_data = PackedInt32Array()
+
+[node name="Killzone" parent="." instance=ExtResource("4_tqj8h")]
+collision_mask = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(188, 109)
+shape = SubResource("WorldBoundaryShape2D_hwf8w")

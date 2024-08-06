@@ -1,3 +1,7 @@
 res://scenes/game.tscn
 res://scenes/whitePlayer.tscn
 res://script/whitePlayer.gd
+res://script/killzone.gd
+res://scenes/killzone.tscn
+res://script/dash.gd
+res://script/Timer.gd

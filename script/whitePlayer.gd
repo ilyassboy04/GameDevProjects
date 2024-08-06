@@ -6,8 +6,17 @@ const JUMP_VELOCITY = -400.0
 var is_wall_sliding = false
 var jump_counter = 0
 
+#Bllack v White
 var state = false
+
+const DASH_SPEED = 900.0
+var dashing = false
+var dash_cooldown_value = true
+
 @onready var collision_shape_2d = $CollisionShape2D
+
+@onready var dash_timer = $dash_timer
+@onready var dash_cooldown = $dash_cooldown
 
 @onready var animated_sprite_2d = $AnimatedSprite2D
 @onready var ray_cast_right = $RayCastRight
@@ -40,6 +49,11 @@ func _physics_process(delta):
 	#movement
 	if direction:
 		velocity.x = direction * SPEED
+		if dashing:
+			velocity.x = direction * DASH_SPEED
+		else:
+			velocity.x = direction * SPEED
+			
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
@@ -48,6 +62,8 @@ func _physics_process(delta):
 	animation(direction)
 	player_state()
 	phasing()
+	dash()
+
 	
 	
 	#vel.y < 0 = opp
@@ -76,7 +92,7 @@ func jump():
 		jump_counter = 0
 		
 func white_animation(direction):
-	if is_on_floor():
+	if is_on_floor:
 		if direction == 0:
 			animated_sprite_2d.play("White_Idle")
 		else:
@@ -85,6 +101,7 @@ func white_animation(direction):
 		animated_sprite_2d.play("White_Double_Jump")
 	else:
 		animated_sprite_2d.play("White_Jump")
+	
 
 func black_animation(direction):
 	if is_on_floor():
@@ -110,10 +127,17 @@ func state_checker():
 		print("true")
 
 func animation(direction):
-	if state == false:
-		white_animation(direction)
-	else:
-		black_animation(direction)
+	if not dashing:
+		if state == false:
+			white_animation(direction)
+		elif state == true:
+			black_animation(direction)
+	elif dashing:
+		if state == true:
+			animated_sprite_2d.play("Black_Dash")
+		elif state == false:
+			animated_sprite_2d.play("White_Dash")
+		
 		
 func phasing():
 	if state == true:
@@ -127,5 +151,22 @@ func phasing():
 		set_collision_layer_value(2,false)
 		set_collision_mask_value(2,false)
 		
-#git change test
-#test approved
+func dash():
+	if Input.is_action_just_pressed("dash") and dash_cooldown_value:
+		dashing = true
+		dash_cooldown_value = false
+		
+		dash_timer.start()
+		dash_cooldown.start()
+		if state == false:
+			animated_sprite_2d.play("White_Dash")
+
+		elif state == true:
+			animated_sprite_2d.play("Black_Dash")
+		
+
+func _on_timer_timeout():
+	dashing = false
+
+func _on_dash_cooldown_timeout():
+	dash_cooldown_value = true
