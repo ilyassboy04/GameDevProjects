@@ -62,7 +62,7 @@ func _physics_process(delta):
 	animation(direction)
 	player_state()
 	phasing()
-	dash()
+	dash(direction)
 
 	
 	
@@ -150,8 +150,8 @@ func phasing():
 		set_collision_layer_value(2,false)
 		set_collision_mask_value(2,false)
 		
-func dash():
-	if Input.is_action_just_pressed("dash") and dash_cooldown_value:
+func dash(direction):
+	if Input.is_action_just_pressed("dash") and not dashing and direction != 0:
 		dashing = true
 		dash_cooldown_value = false
 		
