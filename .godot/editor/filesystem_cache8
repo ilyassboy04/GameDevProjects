@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1722956962
+::res://::1723119512
 icon.svg::CompressedTexture2D::985811133504262780::1722587717::1722587723::1::::<><>::
 whitePlayer.gd::GDScript::-1::1722691302::0::1::::<>RigidBody2D<>::
 ::res://assets/::1722956931
@@ -24,13 +24,13 @@ extras  tileset.png::CompressedTexture2D::1130292844837528976::1722853668::17228
 extras  tileset_Reversed.png::CompressedTexture2D::7261872221931122668::1722853668::1722853668::1::::<><>::
 tree.png::CompressedTexture2D::504536065681143558::1722853668::1722853668::1::::<><>::
 ::res://MjGameJam/::1722895714
-::res://scenes/::1722956931
+::res://scenes/::1723048990
 dash.tscn::PackedScene::6986684493497613998::1722956931::0::1::::<><>::
-game.tscn::PackedScene::4061272678672134834::1722956931::0::1::::<><>::uid://kfh6p5ifne2d::::res://scenes/whitePlayer.tscn<>uid://c8mxukts3oehu::::res://assets/platform/B&W tile set.png<>uid://djw4prslsk51o::::res://assets/platform/B&W tile set_Reversed.png<>uid://dncf7bufxgxl0::::res://scenes/killzone.tscn
-killzone.tscn::PackedScene::8076206587928246827::1722956931::0::1::::<><>::res://script/killzone.gd
-whitePlayer.tscn::PackedScene::712691538276105953::1722956931::0::1::::<><>::uid://1qluelgktcvw::::res://assets/idle white-Sheet.png<>res://script/whitePlayer.gd<>uid://8dh3cxnt011q::::res://assets/Black_roll white-Sheet.png<>uid://bsqu0tcp4wc8a::::res://assets/idle black-Sheet.png<>uid://dw442yfjc83sx::::res://assets/Black-dash-Sheet.png<>uid://7x44rg0juqt4::::res://assets/roll white-Sheet.png<>uid://cxwbitpkdh2kl::::res://assets/Black_player jump 48x48-Sheet.png<>uid://crgiyicskm86q::::res://assets/player run 48x48-Sheet.png<>uid://ctqwt4aaso1su::::res://assets/player jump 48x48-Sheet.png<>uid://6sqi1ux233bo::::res://assets/Black_player run 48x48-Sheet.png<>uid://bk0bcbcwigmpt::::res://assets/White-dash-Sheet.png
-::res://script/::1722956931
+game.tscn::PackedScene::4061272678672134834::1723048990::0::1::::<><>::uid://kfh6p5ifne2d::::res://scenes/whitePlayer.tscn<>uid://c8mxukts3oehu::::res://assets/platform/B&W tile set.png<>uid://djw4prslsk51o::::res://assets/platform/B&W tile set_Reversed.png<>uid://dncf7bufxgxl0::::res://scenes/killzone.tscn
+killzone.tscn::PackedScene::8076206587928246827::1723048990::0::1::::<><>::res://script/killzone.gd
+whitePlayer.tscn::PackedScene::712691538276105953::1723048990::0::1::::<><>::uid://1qluelgktcvw::::res://assets/idle white-Sheet.png<>res://script/whitePlayer.gd<>uid://8dh3cxnt011q::::res://assets/Black_roll white-Sheet.png<>uid://bsqu0tcp4wc8a::::res://assets/idle black-Sheet.png<>uid://dw442yfjc83sx::::res://assets/Black-dash-Sheet.png<>uid://7x44rg0juqt4::::res://assets/roll white-Sheet.png<>uid://cxwbitpkdh2kl::::res://assets/Black_player jump 48x48-Sheet.png<>uid://crgiyicskm86q::::res://assets/player run 48x48-Sheet.png<>uid://ctqwt4aaso1su::::res://assets/player jump 48x48-Sheet.png<>uid://6sqi1ux233bo::::res://assets/Black_player run 48x48-Sheet.png<>uid://bk0bcbcwigmpt::::res://assets/White-dash-Sheet.png
+::res://script/::1722958566
 dash.gd::GDScript::-1::1722956931::0::1::::<>Node2D<>::
 killzone.gd::GDScript::-1::1722956931::0::1::::<>Area2D<>::
 Timer.gd::GDScript::-1::1722956931::0::1::::<>Timer<>::
-whitePlayer.gd::GDScript::-1::1722956931::0::1::::<>CharacterBody2D<>::
+whitePlayer.gd::GDScript::-1::1722958566::0::1::::<>CharacterBody2D<>::
